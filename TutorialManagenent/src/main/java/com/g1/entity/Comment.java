@@ -14,10 +14,10 @@ public class Comment {
   @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "comment_generator")
   private Long id;
 
-  //@Lob
+ 
   private String content;
 
-//  @ManyToOne(fetch = FetchType.EAGER, optional = false)
+
   @ManyToOne(fetch = FetchType.LAZY, optional = false)
   @JoinColumn(name = "tutorial_id", nullable = false)
   @OnDelete(action = OnDeleteAction.CASCADE)
