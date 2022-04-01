@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bezkoder.spring.hibernate.onetomany.exception.ResourceNotFoundException;
+import com.g1.exception.ResourceNotFoundException;
 import com.g1.entity.Tutorial;
 import com.g1.repository.TutorialRepository;
 
